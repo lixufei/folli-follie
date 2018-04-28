@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/folli-follie"
+  ],
+  "window": {
+    "navigationBarTitleText": "标题"
+  }
+}
