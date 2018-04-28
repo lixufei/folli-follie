@@ -1,22 +1,32 @@
-// pages/folli-follie.js
+const articleInfo = {
+  title: '特斯拉卡车发布',
+  category: '科技',
+  poster: '/image/buggy.jpg',
+  content: '特斯拉卡车发布',
+  create_at: '2017-11-11',
+};
+
 Page({
-  getProfile(res) {
-    this.setData({
-      profile: res.detail.userInfo,
-    })
-  },
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    profile: {
-      nickName: '欢迎来到我的世界',
-      avatarUrl: '/image/bracelet.jpg',
-    }
+    article: {},
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function (option) {
+    console.log('abc');
+    this.getAricle(option.id);
+  },
 
+  getAricle: function () {
+    this.setData({
+      article: articleInfo,
+    });
   },
 
   /**

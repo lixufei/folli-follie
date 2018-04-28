@@ -1,0 +1,8 @@
+<view wx:for="{{articles}}" wx:for-item="article" wx:key="id">
+  <image src='{{article.cover}}' data-id="{{article.id}}" bindtap='toDetail'></image>
+  <view>
+    <!-- 为啥在这个地方加data-id -->
+    <view data-id='{{article.id}}'>{{article.title}}</view>
+    <view data-id='{{article.id}}'>{{article.description}}</view>
+  </view>
+</view>
