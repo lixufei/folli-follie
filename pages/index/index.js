@@ -26,6 +26,26 @@ const firstPage = [
 
 ];
 
+const lastPage = [
+  {
+    id: '5',
+    title: '5装修秘诀',
+    description: '5文艺气息爆棚的精致白色现代家',
+    cover: '/image/bracelet.jpg',
+  },
+  {
+    id: '6',
+    title: '6装修秘诀',
+    description: '6文艺气息爆棚的精致白色现代家',
+    cover: '/image/buggy.jpg',
+  }
+
+];
+
+let isEnd = false;
+const pageLimit = 4;
+const READED_ARTICLES = 'READED_ARTICLES';
+
 Page({
 
   /**
@@ -33,26 +53,81 @@ Page({
    */
   data: {
     articles: [],
+    loading: false,
+    loadMoreText: '加载更多',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getArticles(true);
+  },
+  loadMore: function() {
     this.getArticles();
   },
-  getArticles: function () {
-    setTimeout(() => {
+  getArticles: function (isFirstPage) {
+    if (!isEnd && !this.data.loading) {
       this.setData({
-        articles: firstPage,
-      })
-    }, 1000);
+        loading: true,
+      });
+      setTimeout(() => {
+        console.log(isFirstPage);
+        if (isFirstPage) {
+          this.setData({
+            articles: this.addReadStatus(firstPage),
+            loading: false,
+          })
+        } else {
+          this.setData({
+            articles: firstPage.concat(this.addReadStatus(lastPage)),
+            loading: false,
+          })
+          if (lastPage.length < pageLimit) {
+            isEnd = true;
+            this.setData({
+              loadMoreText: '已无更多',
+            })
+          }
+        }
+      }, 1000);
+    }
+    
   },
   toDetail: function(e) {
     let id = e.currentTarget.dataset.id;
+    let readedArticles = wx.getStorageSync(READED_ARTICLES);
+    if (!readedArticles) {
+      wx.setStorageSync(READED_ARTICLES, [id]);
+    } else {
+      wx.setStorageSync(READED_ARTICLES, readedArticles.push[id]);
+    }
+    this.setData({
+      articles: this.addReadStatus(this.data.articles),
+    });
     wx.navigateTo({
       url: `../detail/index?id=${id}`,
     })
+  },
+  addReadStatus: function(articles) {
+    let readedArticles = wx.getStorageSync(READED_ARTICLES);
+    console.log(readedArticles);
+    if (!readedArticles) {
+      return articles;
+    }
+
+    let newArticles = [];
+    console.log(articles);
+    for(let i = 0; i< articles.length; i++) {
+      let article = Object.assign(articles[i]);
+      if (readedArticles.indexOf(article.id) != -1) {
+        article.isReaded = true;
+      } else {
+        article.isReaded = false;
+      }
+      newArticles.push(article);
+    }
+    return newArticles;
   },
 
   /**
