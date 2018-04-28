@@ -75,11 +75,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function (option) {
-    console.log(option)
+    //option可以有什么东西，path有啥用？
     return {
       title: this.data.article.title,
       imageUrl: this.data.article.poster,
-      path: `pages/detail/index?id=${option.id}`,
-    }
+      // path: `pages/detail/index?id=${option.id}`,
+    }  
   }
 })

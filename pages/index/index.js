@@ -23,7 +23,6 @@ const firstPage = [
     description: '4文艺气息爆棚的精致白色现代家',
     cover: '/image/buggy.jpg',
   },
-
 ];
 
 const lastPage = [
@@ -62,6 +61,36 @@ Page({
    */
   onLoad: function (options) {
     this.getArticles(true);
+    //如何用request查询本机IP
+
+    // wx.request({
+    //   url: 'http://127.0.0.1',
+    //   success: function(res) {
+    //     console.log(res);
+    //   }
+    // })
+
+    //拿到location的经纬度，结果用于腾讯map API
+    wx.getLocation({
+      success: function(res) {
+        console.log(res);
+      },
+    });
+
+    //key要注册
+    wx.request({
+      url: 'https://apis.map.qq.com/ws/geocoder/v1/',
+      data: {
+        key: 'GU3BZ-MQG3X-W5R42-TDBD3-7ZNCF-EVF4N',
+        location: '30.49984,114.34253',
+      },
+      success: function(result) {
+        console.log(result);
+      },
+      fail: function(error) {
+        console.log(error);
+      }
+    })
   },
   loadMore: function() {
     this.getArticles();
