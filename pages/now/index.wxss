@@ -100,7 +100,7 @@ swiper {
 
 .more-image {
   width: 338rpx;
-  height: 240rpx;
+  height: 188rpx;
   margin-top: 20rpx;
   margin-bottom: 20rpx;
 }

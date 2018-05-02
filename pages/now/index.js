@@ -9,11 +9,10 @@ Page({
       {
         navigationImage: '/image/swipe-1.jpg',
         discriptionTitle: '1手镯的世界',
-        descriptionMedia: [
-          '/image/home-now-cover.jpg',
-          '/image/home-table-cover.jpg',
-          '/image/watch-cover.jpg',
-        ],
+        descriptionMedia: {
+          images: [],
+          video: '/image/ads.mp4',
+        },
         descriptionContent: '1Silver 925 rose gold plated flexible cuff bracelet with clear cubic zirconia stones from the My FF collection. Do it like a fashionista and wear as many as possible in one wrist for the ultimate result.',
         more: [
           '/image/swipe-1.jpg',
@@ -25,11 +24,13 @@ Page({
       {
         navigationImage: '/image/swipe-2.jpg',
         discriptionTitle: '2手镯的世界',
-        descriptionMedia: [
-          '/image/home-now-cover.jpg',
-          '/image/home-table-cover.jpg',
-          '/image/watch-cover.jpg',
-        ],
+        descriptionMedia: {
+          images: [
+            '/image/home-now-cover.jpg',
+            '/image/home-table-cover.jpg',
+            '/image/watch-cover.jpg',
+          ]
+        },
         descriptionContent: '2Silver 925 rose gold plated flexible cuff bracelet with clear cubic zirconia stones from the My FF collection. Do it like a fashionista and wear as many as possible in one wrist for the ultimate result.',
         more: [
           '/image/swipe-1.jpg',
@@ -41,11 +42,13 @@ Page({
       {
         navigationImage: '/image/swipe-3.jpg',
         discriptionTitle: '3手镯的世界',
-        descriptionMedia: [
-          '/image/home-now-cover.jpg',
-          '/image/home-table-cover.jpg',
-          '/image/watch-cover.jpg',
-        ],
+        descriptionMedia: {
+          images: [
+            '/image/home-now-cover.jpg',
+            '/image/home-table-cover.jpg',
+            '/image/watch-cover.jpg',
+          ]
+        },
         descriptionContent: '3Silver 925 rose gold plated flexible cuff bracelet with clear cubic zirconia stones from the My FF collection. Do it like a fashionista and wear as many as possible in one wrist for the ultimate result.',
         more: [
           '/image/swipe-1.jpg',
@@ -57,11 +60,13 @@ Page({
       {
         navigationImage: '/image/swipe-4.jpg',
         discriptionTitle: '4手镯的世界',
-        descriptionMedia: [
-          '/image/home-now-cover.jpg',
-          '/image/home-table-cover.jpg',
-          '/image/watch-cover.jpg',
-        ],
+        descriptionMedia: {
+          images: [
+            '/image/home-now-cover.jpg',
+            '/image/home-table-cover.jpg',
+            '/image/watch-cover.jpg',
+          ]
+        },
         descriptionContent: '4Silver 925 rose gold plated flexible cuff bracelet with clear cubic zirconia stones from the My FF collection. Do it like a fashionista and wear as many as possible in one wrist for the ultimate result.',
         more: [
           '/image/swipe-1.jpg',
@@ -73,11 +78,13 @@ Page({
       {
         navigationImage: '/image/swipe-5.jpg',
         discriptionTitle: '5手镯的世界',
-        descriptionMedia: [
-          '/image/home-now-cover.jpg',
-          '/image/home-table-cover.jpg',
-          '/image/watch-cover.jpg',
-        ],
+        descriptionMedia: {
+          images: [
+            '/image/home-now-cover.jpg',
+            '/image/home-table-cover.jpg',
+            '/image/watch-cover.jpg',
+          ]
+        },
         descriptionContent: '5Silver 925 rose gold plated flexible cuff bracelet with clear cubic zirconia stones from the My FF collection. Do it like a fashionista and wear as many as possible in one wrist for the ultimate result.',
         more: [
           '/image/swipe-1.jpg',
@@ -89,11 +96,13 @@ Page({
       {
         navigationImage: '/image/swipe-6.jpg',
         discriptionTitle: '6手镯的世界',
-        descriptionMedia: [
-          '/image/home-now-cover.jpg',
-          '/image/home-table-cover.jpg',
-          '/image/watch-cover.jpg',
-        ],
+        descriptionMedia: {
+          images: [
+            '/image/home-now-cover.jpg',
+            '/image/home-table-cover.jpg',
+            '/image/watch-cover.jpg',
+          ]
+        },
         descriptionContent: '6Silver 925 rose gold plated flexible cuff bracelet with clear cubic zirconia stones from the My FF collection. Do it like a fashionista and wear as many as possible in one wrist for the ultimate result.',
         more: [
           '/image/swipe-1.jpg',
