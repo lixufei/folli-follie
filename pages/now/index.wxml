@@ -9,14 +9,15 @@
           <!-- <view class='selected-image-border'></view>  -->
         </image>
       </swiper-item>
-
-
     </block>
     <view class='selected-image-border'></view>
   </swiper>
 </view>
 <!-- description 放到swiper里面不显示，跟boder bottom也不能显示，感觉原因一样 -->
 <view class='description'>
-  <text>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
-  <view>{{favorites[currentSwiperIndex].descriptionContent}}</view>
+  <text class='description-title'>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
+  <view class='description-content'>{{favorites[currentSwiperIndex].descriptionContent}}</view>
+  <view class='contact'>
+  
+  </view>
 </view>
