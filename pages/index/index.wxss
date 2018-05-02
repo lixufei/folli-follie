@@ -3,3 +3,51 @@
   height: 20px;
   background-color: grey;
 }
+
+.home-footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 100rpx;
+}
+
+.home-cover {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.home-cover-image-wrapper {
+  position: relative;
+}
+
+.cover-image {
+  width: 100%;
+  height: 398rpx;
+}
+
+.footer-icon {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.footer-text {
+  font-size: 30rpx;
+}
+
+.my-ff {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-icon-wrapper {
+  text-align:center;
+}
+
+.image-cover-title {
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}

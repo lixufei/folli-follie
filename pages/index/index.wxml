@@ -1,14 +1,38 @@
-<view wx:for="{{articles}}" wx:for-item="article" wx:key="id">
-  <image src='{{article.cover}}' data-id="{{article.id}}" bindtap='toDetail'></image>
-  <view>
-    <!-- 为啥在这个地方加data-id, 路由跳转的传参 -->
-    <view data-id='{{article.id}}'>{{article.title}}</view>
-    <view data-id='{{article.id}}'>{{article.description}}</view>
-  </view>
-  <view class='article-desc {{article.isReaded ? "article-item-clicked": ""}}'></view>
-</view>
+<!-- <view wx:for="{{articles}}" wx:for-item="article" wx:key="id"> -->
+<!-- <view> -->
+<!-- 为啥在这个地方加data-id, 路由跳转的传参 -->
+<!-- <view data-id='{{article.id}}'>{{article.title}}</view> -->
+<!-- <view data-id='{{article.id}}'>{{article.description}}</view> -->
+<!-- </view> -->
+<!-- <view class='article-desc {{article.isReaded ? "article-item-clicked": ""}}'></view> -->
+<!-- </view> -->
 <!-- plain 是啥作用
  -->
-<button type='defaul' plain='{{true}}' loading='{{loading}}' bindtap='loadMore'>
+<!-- <button type='defaul' plain='{{true}}' loading='{{loading}}' bindtap='loadMore'>
   {{loadMoreText}}
-</button>
+</button> -->
+<view class='home-cover'>
+  <view class='home-cover-image-wrapper'>
+    <image class='cover-image' src='/image/home-jewelry-cover.jpg' bindtap='toNow'></image>
+    <view class='image-cover-title'>FF Now</view>
+  </view>
+  <view class='home-cover-image-wrapper'>
+    <image class='cover-image' src='/image/home-handbags-cover.jpg' bindtap='toNow'></image>
+    <view class='image-cover-title'>目录</view>
+  </view>
+  <view class='home-cover-image-wrapper'>
+    <image class='cover-image' src='/image/home-watch-cover.jpg' bindtap='toNow'></image>
+    <view class='image-cover-title'>我的智能产品</view>
+  </view>
+  <view class='home-footer-wrapper'>
+    <view class='footer-icon-wrapper'>
+      <image class='footer-icon' src='/image/location-icon.png'></image>
+      <view class='footer-text'>查找专卖店</view>
+    </view>
+    <view class='my-ff'>My FF</view>
+    <view class='footer-icon-wrapper'>
+      <image class='footer-icon' src='/image/camera-icon.png'></image>
+      <view class='footer-text'>扫描</view>
+    </view>
+  </view>
+</view>
