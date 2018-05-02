@@ -1,1 +1,22 @@
 /* pages/now/index.wxss */
+
+.slide-image {
+  width: 240rpx;
+  height: 130rpx;
+}
+
+swiper {
+  height: 130rpx;
+}
+
+.swiper-wrapper {
+  margin-top: 45rpx;
+  text-align: center;
+  font-size: 25rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid grey;
+}
+
+.swiper-image-wrapper {
+  margin-top: 20rpx;
+}

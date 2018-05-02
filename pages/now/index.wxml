@@ -1,2 +1,22 @@
-<!--pages/now/index.wxml-->
-<text>pages/now/index.wxml</text>
+<view class='swiper-wrapper'>
+  <text>根据您的喜好筛选文章</text>
+  <swiper duration="2000" display-multiple-items="{{3}}" current="{{currentSwiperIndex}}" bindchange="handleSwiperChange" class='swiper-image-wrapper'>
+    <block wx:for="{{favorites}}" wx:key="navigationImage">
+      <swiper-item>
+        <image src="{{item.navigationImage}}" class="slide-image">
+          <!-- 给i
+          mage border bottom 没效果 -->
+          <!-- <view class='selected-image-border'></view>  -->
+        </image>
+      </swiper-item>
+
+
+    </block>
+    <view class='selected-image-border'></view>
+  </swiper>
+</view>
+<!-- description 放到swiper里面不显示，跟boder bottom也不能显示，感觉原因一样 -->
+<view class='description'>
+  <text>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
+  <view>{{favorites[currentSwiperIndex].descriptionContent}}</view>
+</view>
