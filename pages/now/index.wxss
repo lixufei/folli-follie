@@ -28,6 +28,8 @@ swiper {
   text-align: center;
   margin-top: 20rpx;
   min-height: 500px;
+  padding-bottom: 30rpx;
+  border-bottom: 3rpx solid grey;
 }
 
 .description-swiper {
@@ -88,4 +90,23 @@ swiper {
   height: 55rpx;
   border: 2rpx solid;
   border-radius: 50%;
+}
+
+.more-wrapper {
+  text-align: center;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.more-image {
+  width: 338rpx;
+  height: 240rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.more-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

@@ -44,3 +44,9 @@
     </view>
   </view>
 </view>
+<view class='more-wrapper'>
+  <text>更多文章</text>
+  <view class='more-images'>
+    <image wx:for="{{favorites[currentSwiperIndex].more}}" src='{{item}}' class='more-image' />
+  </view>
+</view>
