@@ -4,8 +4,7 @@
     <block wx:for="{{favorites}}" wx:key="navigationImage">
       <swiper-item>
         <image src="{{item.navigationImage}}" class="slide-image">
-          <!-- 给i
-          mage border bottom 没效果 -->
+          <!-- 给image border bottom 没效果 -->
           <!-- <view class='selected-image-border'></view>  -->
         </image>
       </swiper-item>
@@ -15,8 +14,15 @@
 </view>
 <!-- description 放到swiper里面不显示，跟boder bottom也不能显示，感觉原因一样 -->
 <view class='description'>
-  <text class='description-title'>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
-  <view class='description-content'>{{favorites[currentSwiperIndex].descriptionContent}}</view>
+  <view>
+    <text class='description-title'>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
+    <swiper duration="2000" class='description-swiper' next-margin='50'>
+      <swiper-item wx:for="{{favorites[currentSwiperIndex].descriptionMedia}}" wx:key="navigationImage">
+        <image src="{{item}}" mode="aspectFill" />
+      </swiper-item>
+    </swiper>
+    <view class='description-content'>{{favorites[currentSwiperIndex].descriptionContent}}</view>
+  </view>
   <view class='contact'>
     <view class='icon-wrapper'>
       <view class='contact-icon face-book-icon'></view>

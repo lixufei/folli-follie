@@ -22,9 +22,18 @@ swiper {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   margin-top: 20rpx;
   min-height: 500px;
+}
+
+.description-swiper {
+  height: 480rpx;
+  margin-top: 22rpx;
+  margin-bottom: 22rpx;
 }
 
 .description-title {
