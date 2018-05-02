@@ -158,6 +158,11 @@ Page({
     }
     return newArticles;
   },
+  toNow: function() {
+    wx.navigateTo({
+      url: '../now/index',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
