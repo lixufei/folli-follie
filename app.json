@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/now/index",
+    "pages/table/index",
     "pages/index/index",
-    "pages/detail/index"
+    "pages/detail/index",
+    "pages/now/index"
   ],
   "window": {
     "navigationBarTitleText": "Folli Follie"

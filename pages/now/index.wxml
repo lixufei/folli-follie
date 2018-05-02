@@ -15,7 +15,9 @@
 <!-- description 放到swiper里面不显示，跟boder bottom也不能显示，感觉原因一样 -->
 <view class='description'>
   <view>
-    <text class='description-title'>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
+    <text class='description-title'>
+      {{favorites[currentSwiperIndex].discriptionTitle}}
+    </text>
     <swiper duration="2000" class='description-swiper' next-margin='50' wx:if="{{favorites[currentSwiperIndex].descriptionMedia.images.length > 0}}">
       <swiper-item wx:for="{{favorites[currentSwiperIndex].descriptionMedia.images}}" wx:key="navigationImage">
         <image src="{{item}}" mode="aspectFill" />

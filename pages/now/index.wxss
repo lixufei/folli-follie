@@ -102,7 +102,7 @@ swiper {
   width: 338rpx;
   height: 188rpx;
   margin-top: 20rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 10rpx;
 }
 
 .more-images {
