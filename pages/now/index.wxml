@@ -18,6 +18,23 @@
   <text class='description-title'>{{favorites[currentSwiperIndex].discriptionTitle}}</text>
   <view class='description-content'>{{favorites[currentSwiperIndex].descriptionContent}}</view>
   <view class='contact'>
-  
+    <view class='icon-wrapper'>
+      <view class='contact-icon face-book-icon'></view>
+    </view>
+    <view class='icon-wrapper'>
+      <view class='contact-icon twitter-icon'></view>
+    </view>
+    <view class='icon-wrapper'>
+      <view class='contact-icon google-plus-icon'></view>
+    </view>
+    <view class='icon-wrapper'>
+      <view class='contact-icon comment-icon'></view>
+    </view>
+    <view class='icon-wrapper'>
+      <view class='contact-icon envelope-icon'></view>
+    </view>
+    <view class='icon-wrapper'>
+      <view class='contact-icon pinterest-icon'></view>
+    </view>
   </view>
 </view>
