@@ -6,6 +6,7 @@ Page({
    */
   data: {
     navigationTapped: false,
+    navigationWatchTapped: false,
   },
 
   /**
@@ -15,10 +16,12 @@ Page({
   
   },
 
-  handleTap: function() {
+  handleTap: function(event) {
+    console.log(event.currentTarget.dataset.type);
     var that = this;
     that.setData({
-      navigationTapped: true,
+      navigationTapped: !that.data.navigationTapped,
+      navigationWatchTapped: event.currentTarget.dataset.type === 'nagivation-watch',
     });
   },
 

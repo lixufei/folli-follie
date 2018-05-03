@@ -2,12 +2,17 @@
   <view class='upper-background {{navigationTapped ? "background-none" : ""}}'>
     为您精选的产品
   </view>
-  <view class='bag-wrapper'>
+  <view class='bag-wrapper {{navigationTapped && navigationWatchTapped ? "navigation-none" : ""}}' bindtap='handleTap'>
     <image src='/image/table-bag.jpg' mode='center' class='navigator'></image>
     <view class='navigator-text'>手袋</view>
+    <view class='{{navigationTapped && !navigationWatchTapped ? "navigator-cross" : ""}}'></view>
   </view>
-  <view class='watch-wrapper' bindtap='handleTap'>
+  <view class='watch-wrapper {{navigationTapped && !navigationWatchTapped ? "navigation-none" : ""}}' bindtap='handleTap' data-type='nagivation-watch'>
     <image src='/image/table-watch.jpg' class='navigator' mode='center'></image>
     <view class='navigator-text'>腕表</view>
+    <view class='{{navigationTapped && navigationWatchTapped ? "navigator-cross" : ""}}'></view>
+  </view>
+  <view wx:if='{{navigationTapped}}'>
+  abc
   </view>
 </view>

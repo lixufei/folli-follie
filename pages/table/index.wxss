@@ -18,6 +18,7 @@
 }
 
 .upper-background {
+  transition: all 0.3s linear;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +28,19 @@
 }
 
 .background-none {
-  transition: all 0.3s linear;
   height: 0;
+}
+
+.navigation-none {
+  display: none;
+}
+
+.navigator-cross {
+  width: 50rpx;
+  height: 50rpx;
+  bottom: 10rpx;
+  right: 20rpx;
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fal' data-icon='times' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512' class='svg-inline--fa fa-times fa-w-12 fa-2x'%3E%3Cpath fill='%23ffffff' d='M217.5 256l137.2-137.2c4.7-4.7 4.7-12.3 0-17l-8.5-8.5c-4.7-4.7-12.3-4.7-17 0L192 230.5 54.8 93.4c-4.7-4.7-12.3-4.7-17 0l-8.5 8.5c-4.7 4.7-4.7 12.3 0 17L166.5 256 29.4 393.2c-4.7 4.7-4.7 12.3 0 17l8.5 8.5c4.7 4.7 12.3 4.7 17 0L192 281.5l137.2 137.2c4.7 4.7 12.3 4.7 17 0l8.5-8.5c4.7-4.7 4.7-12.3 0-17L217.5 256z' class=''%3E%3C/path%3E%3C/svg%3E");
 }
