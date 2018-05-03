@@ -1,12 +1,12 @@
 <view>
-  <view class='upper-background'>
+  <view class='upper-background {{navigationTapped ? "background-none" : ""}}'>
     为您精选的产品
   </view>
   <view class='bag-wrapper'>
     <image src='/image/table-bag.jpg' mode='center' class='navigator'></image>
     <view class='navigator-text'>手袋</view>
   </view>
-  <view class='watch-wrapper'>
+  <view class='watch-wrapper' bindtap='handleTap'>
     <image src='/image/table-watch.jpg' class='navigator' mode='center'></image>
     <view class='navigator-text'>腕表</view>
   </view>

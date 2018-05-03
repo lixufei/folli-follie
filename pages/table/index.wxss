@@ -25,3 +25,8 @@
   height: 800rpx;
   background: linear-gradient(to left top, rgb(236, 110, 2) 0px, rgb(236, 110, 2) 50%, rgb(239, 132, 38) 50.1%, rgb(239, 132, 38) 100%);
 }
+
+.background-none {
+  transition: all 0.3s linear;
+  height: 0;
+}

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    navigationTapped: false,
   },
 
   /**
@@ -13,6 +13,13 @@ Page({
    */
   onLoad: function (options) {
   
+  },
+
+  handleTap: function() {
+    var that = this;
+    that.setData({
+      navigationTapped: true,
+    });
   },
 
   /**
