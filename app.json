@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/store/index",
     "pages/table/index",
     "pages/detail/index",
     "pages/now/index"

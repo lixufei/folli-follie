@@ -168,6 +168,20 @@ Page({
       url: '../table/index',
     })
   },
+  handleScan: function() {
+    wx.scanCode({
+      // onlyFromCamera: true,
+      success: (res) => {
+        console.log(res)
+      }
+    })
+  },
+  handleSearchStore: function() {
+    // src = 'https://jinshuju.net/f/8rD5xV'
+    wx.navigateTo({
+      url: '../store/index',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
