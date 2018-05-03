@@ -1,0 +1,4 @@
+<view class='navigation-wrapper'>
+  <image src='{{navigationImage}}' class='navigation-image' mode='center'></image>
+  <view class='navigation-text'>{{navigationText}}</view>
+</view>

@@ -1,0 +1,19 @@
+.avatar {
+  height: 350rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-wrapper {
+  height: 150rpx;
+  width: 150rpx;
+  border: 2rpx solid;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.avatar-text {
+  margin-top: 50%;
+  transform: translateY(-50%);
+}

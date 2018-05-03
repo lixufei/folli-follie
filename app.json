@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/myFF/index",
     "pages/index/index",
     "pages/store/index",
     "pages/table/index",

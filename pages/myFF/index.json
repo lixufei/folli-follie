@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "MY FF",
+  "usingComponents": {
+    "image-navigation": "../../components/imageNavigation/index"
+  }
+}

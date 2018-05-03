@@ -16,7 +16,7 @@
       <view class='footer-icon footer-location'></view>
       <view class='footer-text'>查找专卖店</view>
     </view>
-    <view class='my-ff'>My FF</view>
+    <view class='my-ff' bindtap='handleMyFF'>My FF</view>
     <view class='footer-icon-wrapper' bindtap='handleScan'>
       <view class='footer-icon footer-camera'></view>
       <view class='footer-text'>扫描</view>

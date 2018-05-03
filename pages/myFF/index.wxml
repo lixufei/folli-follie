@@ -1,0 +1,10 @@
+<view class='avatar'>
+  <view class='avatar-wrapper'>
+    <view class='avatar-text'>小刀子</view>
+  </view>
+</view>
+<view>
+  <image-navigation navigationImage='/image/table-watch.jpg' navigationText='我的心愿单'></image-navigation>
+  <image-navigation navigationImage='/image/table-bag.jpg' navigationText='我的订单'></image-navigation>
+  <image-navigation navigationImage='/image/table-watch.jpg' navigationText='我的偏好'></image-navigation>
+</view>
