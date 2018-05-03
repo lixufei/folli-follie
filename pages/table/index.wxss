@@ -1,1 +1,27 @@
-/* pages/table/index.wxss */
+.bag-wrapper, .watch-wrapper {
+  position: relative;
+}
+
+.navigator {
+  width: 100%;
+  height: 202rpx;
+  margin-top: 3rpx;
+  margin-bottom: -10rpx;
+}
+
+.navigator-text {
+  position: absolute;
+  bottom: 10rpx;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.upper-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 800rpx;
+  background: linear-gradient(to left top, rgb(236, 110, 2) 0px, rgb(236, 110, 2) 50%, rgb(239, 132, 38) 50.1%, rgb(239, 132, 38) 100%);
+}

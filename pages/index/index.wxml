@@ -4,7 +4,7 @@
     <view class='image-cover-title'>FF Now</view>
   </view>
   <view class='home-cover-image-wrapper'>
-    <image class='cover-image' src='/image/home-handbags-cover.jpg' bindtap='toNow'></image>
+    <image class='cover-image' src='/image/home-handbags-cover.jpg' bindtap='toTable'></image>
     <view class='image-cover-title'>目录</view>
   </view>
   <view class='home-cover-image-wrapper'>
@@ -13,12 +13,12 @@
   </view>
   <view class='home-footer-wrapper'>
     <view class='footer-icon-wrapper'>
-      <image class='footer-icon' src='/image/location-icon.png'></image>
+      <view class='footer-icon footer-location'></view>
       <view class='footer-text'>查找专卖店</view>
     </view>
     <view class='my-ff'>My FF</view>
     <view class='footer-icon-wrapper'>
-      <image class='footer-icon' src='/image/camera-icon.png'></image>
+      <view class='footer-icon footer-camera'></view>
       <view class='footer-text'>扫描</view>
     </view>
   </view>

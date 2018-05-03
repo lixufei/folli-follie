@@ -1,2 +1,13 @@
-<!--pages/table/index.wxml-->
-<text>pages/table/index.wxml</text>
+<view>
+  <view class='upper-background'>
+    为您精选的产品
+  </view>
+  <view class='bag-wrapper'>
+    <image src='/image/table-bag.jpg' mode='center' class='navigator'></image>
+    <view class='navigator-text'>手袋</view>
+  </view>
+  <view class='watch-wrapper'>
+    <image src='/image/table-watch.jpg' class='navigator' mode='center'></image>
+    <view class='navigator-text'>腕表</view>
+  </view>
+</view>
