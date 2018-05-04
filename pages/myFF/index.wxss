@@ -17,3 +17,7 @@
   margin-top: 50%;
   transform: translateY(-50%);
 }
+
+.write-article-text {
+  font-size: 25rpx;
+}

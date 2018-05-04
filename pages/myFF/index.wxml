@@ -1,3 +1,4 @@
+<view bindtap='toWriteArticle' class='write-article-text'>分享喜欢的时尚宝贝</view>
 <view class='avatar'>
   <view class='avatar-wrapper'>
     <view class='avatar-text'>小刀子</view>

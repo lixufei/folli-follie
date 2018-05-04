@@ -1,4 +1,4 @@
-// pages/myFF/index.js
+// pages/article/my-article.js
 Page({
 
   /**
@@ -13,12 +13,6 @@ Page({
    */
   onLoad: function (options) {
   
-  },
-
-  toWriteArticle: function() {
-    wx.navigateTo({
-      url: '../article/my-article',
-    })
   },
 
   /**
