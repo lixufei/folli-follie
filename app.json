@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/article/my-article",
     "pages/myFF/index",
+    "pages/article/my-article",
     "pages/index/index",
     "pages/store/index",
     "pages/table/index",
